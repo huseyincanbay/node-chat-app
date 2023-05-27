@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin: 0 0 10px;
+}
+
+#room-form,
+#chat-container {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+#room-form input[type="text"],
+#chat-form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#room-form input[type="button"],
+#chat-form input[type="button"] {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#room-form input[type="button"]:hover,
+#chat-form input[type="button"]:hover {
+  background-color: #333;
+}
+
+#message-container {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.user-message {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.user-message.sent {
+  flex-direction: row-reverse;
+}
+
+.user-message .message-box {
+  background-color: #f1f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+
+.user-message.sent .message-box {
+  background-color: #DCF8C6;
+  align-self: flex-end;
+}
+
+.user-message .username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#chat-form {
+  display: flex;
+}
+
+#send-btn {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #send-btn:hover {
+    background-color: #333;
+  }
+  
+  #send-btn:focus {
+    outline: none;
+  }
+  
+  #send-btn:active {
+    background-color: #222;
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
